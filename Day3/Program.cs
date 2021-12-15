@@ -19,7 +19,7 @@ for (int i = 0; i < input[0].Length; i++)
         gammaString += "1";
         epsilonString += "0";
     }
-    else0
+    else
     {
         gammaString += "0";
         epsilonString += "1";
