@@ -61,8 +61,6 @@ string[] filteredEpsilon = input;
             filteredEpsilon = filteredEpsilon.Where(x => x.Substring(i, 1) == epsilonString.Substring(i, 1)).ToArray();
         }
     }
-
-    
 }
 
 
@@ -70,6 +68,6 @@ int oxygenRating = Convert.ToInt32(filteredGamma[0], 2);
 int scrubberRating = Convert.ToInt32(filteredEpsilon[0], 2);
 
 Console.WriteLine();
-Console.WriteLine($"Oxygen Rating: {oxygenRating}");
-Console.WriteLine($"Scrubber Rating: {scrubberRating}");
+Console.WriteLine($"{filteredGamma[0]} Oxygen Rating: {oxygenRating}");
+Console.WriteLine($"{filteredEpsilon[0]} Scrubber Rating: {scrubberRating}");
 Console.WriteLine($"Total: {oxygenRating * scrubberRating}");
